@@ -6,51 +6,32 @@ publishDir = 'docs'
 
 [params]
     author = "G&G"
-    description = "Sito ufficiale G&G - Protezione & Innovazione"
-    info = "Sistemi in sicurezza. Benvenuti nel terminale."
+    # Questa è la scritta che apparirà sotto l'immagine grande
+    description = "SISTEMA OPERATIVO G&G - ACCESSO AUTORIZZATO"
+    info = "Analisi Dati | Cybersecurity | AI Research"
     avatarurl = "images/GG.jpg"
     
-    # --- STYLE CYBERSECURITY ---
-    colorScheme = "dark" # Forza il tema scuro
-    avatarSize = "350px" # Immagine di DIO/GG ancora più grande
+    # --- STYLE HACKER ---
+    colorScheme = "dark"
+    avatarSize = "350px" # Immagine enorme al centro
     layout = "circle" 
-    
-    # Colori personalizzati (Verde Matrix)
-    # Questi codici rendono il sito stile terminale
+
+    # Colori Verde Neon su Nero
     [params.colors]
-        primary = "#00FF00" # Verde Neon
-        background = "#000000" # Nero profondo
-        text = "#00FF00" # Testo Verde
+        primary = "#00FF00"
+        background = "#000000"
+        text = "#00FF00"
 
-    # Navbar Sticky (Resta fissa in alto)
-    stickyHeader = true
-
-    # SOCIAL ICONS XL
-    [[params.social]]
-        name = "Github"
-        icon = "fa fa-2x fa-terminal" # Icona terminale per stile hacker
-        weight = 1
-        url = "https://github.com/gennaropecorone-ai/"
-    [[params.social]]
-        name = "Security"
-        icon = "fa fa-2x fa-shield" # Icona scudo per cybersecurity
-        weight = 2
-        url = "#"
-
-# --- NAVBAR PROFESSIONALE ---
+# --- NAVBAR (I tasti in alto) ---
 [[menu.main]]
-    name = "> HOME"
+    name = "[ HOME ]"
     weight = 1
     url = "/"
 [[menu.main]]
-    name = "> DATABASE"
+    name = "[ DATABASE ]"
     weight = 2
     url = "posts/"
 [[menu.main]]
-    name = "> PROGETTI_TOP_SECRET"
+    name = "[ CHI SIAMO ]"
     weight = 3
-    url = "projects/"
-[[menu.main]]
-    name = "> CONTATTI"
-    weight = 4
     url = "about/"
