@@ -1,5 +1,5 @@
 baseURL = 'https://gennaropecorone-ai.github.io/miosito-hugo/'
-languageCode = 'it-it'
+defaultContentLanguage = 'it'
 title = 'G&G CYBER-LAB'
 theme = 'hugo-coder'
 publishDir = 'docs'
@@ -42,7 +42,7 @@ publishDir = 'docs'
     weight = 4
     url = "guida/"
 
-# --- ABILITA GRAFICA PDF NELLA PAGINA GUIDA ---
+# --- ABILITA HTML (PER LA GRAFICA DELLA GUIDA) ---
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
