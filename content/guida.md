@@ -110,7 +110,7 @@ git push origin main
 </ul>
 
 <div style="text-align: center; margin-top: 40px; font-size: 0.8em; border-top: 1px solid #0f0; padding-top: 15px;">
-    DOCUMENTO INTEGRALE GENERATO PER GENNARO PECORONE - G&G LAB - 2026
+    DOCUMENTO INTEGRALE - G&G LAB - 2026
 </div>
 
 </div>
