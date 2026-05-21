@@ -9,40 +9,32 @@ publishDir = 'docs'
     description = "SISTEMA OPERATIVO G&G - ACCESSO AUTORIZZATO"
     info = "Analisi Dati | Cybersecurity | AI Research"
     avatarurl = "images/GG.jpg"
-    
-    # --- STYLE HACKER ---
     colorScheme = "dark"
     avatarSize = "350px"
     layout = "circle" 
 
-    # Colori Verde Neon su Nero
     [params.colors]
         primary = "#00FF00"
         background = "#000000"
         text = "#00FF00"
 
-# --- NAVBAR (I tasti in alto) ---
 [[menu.main]]
     name = "[ HOME ]"
     weight = 1
     url = "/"
-
 [[menu.main]]
     name = "[ DATABASE ]"
     weight = 2
     url = "posts/"
-
 [[menu.main]]
     name = "[ CHI SIAMO ]"
     weight = 3
     url = "about/"
-
 [[menu.main]]
     name = "[ GUIDA ]"
     weight = 4
     url = "guida/"
 
-# --- ABILITA HTML (PER LA GRAFICA DELLA GUIDA) ---
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
