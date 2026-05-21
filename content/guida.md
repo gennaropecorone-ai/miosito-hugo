@@ -139,7 +139,105 @@ if (Test-Path docs) { Remove-Item -Recurse -Force docs } [cite: 104]
             <li>Cartella (Folder): Seleziona <span class="highlight">/docs</span>[cite: 114].</li>
             <li>Salva e attendi 60 secondi[cite: 115].</li>
         </ul>
+    </div>+++
+title = 'Guida Operativa'
+date = 2026-05-21
+draft = false
++++
+
+<style>
+    .cyber-body {
+        background-color: #000;
+        color: #00FF00;
+        font-family: 'Courier New', Courier, monospace;
+        padding: 25px;
+        border: 2px solid #00FF00;
+        border-radius: 10px;
+        box-shadow: 0 0 20px #00FF00;
+        line-height: 1.6;
+    }
+    .cyber-header {
+        text-align: center;
+        border: 3px double #00FF00;
+        padding: 20px;
+        margin-bottom: 30px;
+        background-color: #1a1a1a;
+    }
+    .step-content h2 { 
+        background-color: #00FF00; 
+        color: #000; 
+        padding: 5px 15px; 
+        text-transform: uppercase; 
+        display: inline-block;
+    }
+    .code-block {
+        background-color: #000;
+        border: 1px dashed #00FF00;
+        padding: 15px;
+        margin: 15px 0;
+        font-size: 0.9em;
+    }
+    .highlight { color: #fff; font-weight: bold; }
+</style>
+
+<div class="cyber-body">
+    <div class="cyber-header">
+        <h1>G&G CYBER-LAB</h1>
+        <p>MANUALE INTEGRALE DI INSTALLAZIONE E CONFIGURAZIONE</p>
     </div>
+
+    <div class="step-content">
+        <h2>1. PREPARAZIONE AMBIENTE</h2>
+        <p>Eseguire nel Terminale (Amministratore) per installare i componenti core:</p>
+        <div class="code-block">
+            winget install Git.Git<br>
+            winget install Hugo.Hugo.Extended<br>
+            winget install Microsoft.VisualStudioCode
+        </div>
+    </div>
+
+    <div class="step-content">
+        <h2>2. CREAZIONE SITO E TEMA</h2>
+        <p>Inizializzazione del progetto e collegamento del tema professionale:</p>
+        <div class="code-block">
+            hugo new site miosito-hugo<br>
+            cd miosito-hugo<br>
+            git init<br>
+            git submodule add https://github.com/luizdepra/hugo-coder.git themes/hugo-coder
+        </div>
+    </div>
+
+    <div class="step-content">
+        <h2>3. CONFIGURAZIONE "CYBERSECURITY" (HUGO.TOML)</h2>
+        <p>Sostituisci il contenuto di <span class="highlight">hugo.toml</span> per attivare lo stile Terminale.</p>
+    </div>
+
+    <div class="step-content">
+        <h2>4. PROCEDURA DI PUBBLICAZIONE (IL RITUALE)</h2>
+        <p>Da eseguire nel terminale di VS Code ogni volta che fai una modifica:</p>
+        <div class="code-block">
+            # 1. Pulizia cartella docs<br>
+            if (Test-Path docs) { Remove-Item -Recurse -Force docs }<br><br>
+            # 2. Compilazione e Invio<br>
+            hugo<br>
+            git add .<br>
+            git commit -m "Aggiornamento Cyber-Lab"<br>
+            git push origin main
+        </div>
+    </div>
+
+    <div class="step-content">
+        <h2>5. MESSA ONLINE SU GITHUB PAGES</h2>
+        <ul>
+            <li>Vai su GitHub -> <span class="highlight">Settings</span> -> <span class="highlight">Pages</span></li>
+            <li>Branch: <span class="highlight">main</span> | Cartella: <span class="highlight">/docs</span></li>
+        </ul>
+    </div>
+
+    <div style="text-align: center; border-top: 1px solid #0f0; margin-top: 20px; padding-top: 10px;">
+        DOCUMENTO INTEGRALE GENERATO PER GENNARO PECORONE - G&G LAB - 2026
+    </div>
+</div>
 
     <div class="footer">
         DOCUMENTO INTEGRALE GENERATO PER GENNARO PECORONE - G&G LAB - 2026 [cite: 116, 117]

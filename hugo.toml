@@ -40,3 +40,6 @@ publishDir = 'docs'
     name = "[ GUIDA ]"
     weight = 5
     url = "guida/"
+    
+    [markup.goldmark.renderer]
+    unsafe = true
