@@ -3,7 +3,7 @@
 
 <head>
   <title>
-  Guida Operativa · G&amp;G CYBER-LAB
+  Guida Operativa G&amp;G Cyber-Lab · G&amp;G CYBER-LAB
 </title>
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,20 +16,19 @@
 <meta name="description" content="
 
     
-
-    G&G CYBER-LAB
-    MANUALE INTEGRALE DI INSTALLAZIONE E CONFIGURAZIONE">
+        G&G CYBER-LAB
+        MANUALE INTEGRALE DI INSTALLAZIONE E CONFIGURAZIONE">
 <meta name="keywords" content="">
 
 
 
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Guida Operativa">
+  <meta name="twitter:title" content="Guida Operativa G&G Cyber-Lab">
   <meta name="twitter:description" content="G&amp;G CYBER-LAB MANUALE INTEGRALE DI INSTALLAZIONE E CONFIGURAZIONE">
 
 <meta property="og:url" content="https://gennaropecorone-ai.github.io/miosito-hugo/guida/">
   <meta property="og:site_name" content="G&G CYBER-LAB">
-  <meta property="og:title" content="Guida Operativa">
+  <meta property="og:title" content="Guida Operativa G&G Cyber-Lab">
   <meta property="og:description" content="G&amp;G CYBER-LAB MANUALE INTEGRALE DI INSTALLAZIONE E CONFIGURAZIONE">
   <meta property="og:locale" content="it_it">
   <meta property="og:type" content="article">
@@ -151,57 +150,160 @@
     <header>
       <h1 class="title">
         <a class="title-link" href="https://gennaropecorone-ai.github.io/miosito-hugo/guida/">
-          Guida Operativa
+          Guida Operativa G&amp;G Cyber-Lab
         </a>
       </h1>
     </header>
 
     <style>
-    .cyber-body { background-color: #000; color: #00FF00; font-family: 'Courier New', monospace; padding: 25px; border: 2px solid #00FF00; border-radius: 10px; box-shadow: 0 0 20px #00FF00; }
-    .cyber-header { text-align: center; border: 3px double #00FF00; padding: 20px; margin-bottom: 30px; background-color: #1a1a1a; }
-    .step-content h2 { background-color: #00FF00; color: #000; padding: 5px 15px; text-transform: uppercase; display: inline-block; margin-top: 20px; }
-    .code-block { background-color: #000; border: 1px dashed #00FF00; padding: 15px; margin: 15px 0; font-size: 0.9em; white-space: pre-wrap; }
+    .cyber-body {
+        background-color: #000;
+        color: #00FF00;
+        font-family: 'Courier New', Courier, monospace;
+        padding: 25px;
+        border: 2px solid #00FF00;
+        border-radius: 10px;
+        box-shadow: 0 0 20px #00FF00;
+        line-height: 1.6;
+    }
+    .cyber-header {
+        text-align: center;
+        border: 3px double #00FF00;
+        padding: 20px;
+        margin-bottom: 30px;
+        background-color: #1a1a1a;
+    }
+    .step-content h2 { 
+        background-color: #00FF00; 
+        color: #000 !important; 
+        padding: 5px 15px; 
+        text-transform: uppercase; 
+        display: inline-block;
+        margin-top: 25px;
+    }
+    .code-block {
+        background-color: #000;
+        border: 1px dashed #00FF00;
+        padding: 15px;
+        margin: 15px 0;
+        font-size: 0.95em;
+        white-space: pre-wrap;
+        color: #00FF00;
+    }
     .highlight { color: #fff; font-weight: bold; }
+    .footer-cyber {
+        text-align: center;
+        border-top: 1px solid #00FF00;
+        margin-top: 40px;
+        padding-top: 20px;
+        font-size: 0.9em;
+    }
+    ul { list-style-type: "-> "; }
 </style>
 <div class="cyber-body">
-    
-<div class="cyber-header">
-    <h1>G&G CYBER-LAB</h1>
-    <p>MANUALE INTEGRALE DI INSTALLAZIONE E CONFIGURAZIONE</p>
-</div>
-
-<div class="step-content">
-    <h2>1. PREPARAZIONE AMBIENTE</h2>
-    <p>Eseguire nel Terminale (Amministratore):</p>
-    <div class="code-block">
-winget install Git.Git
+    <div class="cyber-header">
+        <h1>G&G CYBER-LAB</h1>
+        <p>MANUALE INTEGRALE DI INSTALLAZIONE E CONFIGURAZIONE</p>
+    </div>
+<pre><code>&lt;div class=&quot;step-content&quot;&gt;
+    &lt;h2&gt;1. PREPARAZIONE AMBIENTE&lt;/h2&gt;
+    &lt;p&gt;Eseguire nel Terminale (Amministratore) per installare i componenti core:&lt;/p&gt;
+    &lt;div class=&quot;code-block&quot;&gt;
+</code></pre>
+<h1 id="installazione-git-hugo-extended-e-vs-code">
+  Installazione Git, Hugo Extended e VS Code
+  <a class="heading-link" href="#installazione-git-hugo-extended-e-vs-code">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<p>winget install Git.Git
 winget install Hugo.Hugo.Extended
 winget install Microsoft.VisualStudioCode</div>
-</div>
-
-<div class="step-content">
-    <h2>2. CREAZIONE SITO</h2>
-    <div class="code-block">
-hugo new site miosito-hugo
+</div></p>
+<pre><code>&lt;div class=&quot;step-content&quot;&gt;
+    &lt;h2&gt;2. CREAZIONE SITO E TEMA&lt;/h2&gt;
+    &lt;p&gt;Inizializzazione del progetto e collegamento del tema professionale:&lt;/p&gt;
+    &lt;div class=&quot;code-block&quot;&gt;
+</code></pre>
+<p>hugo new site miosito-hugo
 cd miosito-hugo
-git init</div>
-</div>
-
-<div class="step-content">
-    <h2>3. IL RITUALE DI PUBBLICAZIONE</h2>
-    <div class="code-block">
-hugo
-git add .
-git commit -m "Update"
+git init
+git submodule add <a href="https://github.com/luizdepra/hugo-coder.git"  class="external-link" target="_blank" rel="noopener">https://github.com/luizdepra/hugo-coder.git</a> themes/hugo-coder</div>
+</div></p>
+<pre><code>&lt;div class=&quot;step-content&quot;&gt;
+    &lt;h2&gt;3. CONFIGURAZIONE &quot;CYBERSECURITY&quot; (HUGO.TOML)&lt;/h2&gt;
+    &lt;p&gt;Sostituisci il contenuto di &lt;span class=&quot;highlight&quot;&gt;hugo.toml&lt;/span&gt; con questo codice per attivare lo stile Terminale:&lt;/p&gt;
+    &lt;div class=&quot;code-block&quot;&gt;
+</code></pre>
+<p>baseURL = &lsquo;<a href="https://gennaropecorone-ai.github.io/miosito-hugo/%27"  class="external-link" target="_blank" rel="noopener">https://gennaropecorone-ai.github.io/miosito-hugo/'</a>
+languageCode = &lsquo;it-it&rsquo;
+title = &lsquo;G&amp;G CYBER-LAB&rsquo;
+theme = &lsquo;hugo-coder&rsquo;
+publishDir = &lsquo;docs&rsquo;</p>
+<p>[params]
+author = &ldquo;G&amp;G&rdquo;
+description = &ldquo;SISTEMA OPERATIVO G&amp;G - ACCESSO AUTORIZZATO&rdquo;
+info = &ldquo;Analisi Dati | Cybersecurity | AI Research&rdquo;
+avatarurl = &ldquo;images/GG.jpg&rdquo;
+colorScheme = &ldquo;dark&rdquo;
+avatarSize = &ldquo;350px&rdquo;
+layout = &ldquo;circle&rdquo;
+stickyHeader = true</p>
+<p>[params.colors]
+primary = &ldquo;#00FF00&rdquo;
+background = &ldquo;#000000&rdquo;
+text = &ldquo;#00FF00&rdquo;</div>
+</div></p>
+<pre><code>&lt;div class=&quot;step-content&quot;&gt;
+    &lt;h2&gt;4. PROCEDURA DI PUBBLICAZIONE (IL RITUALE)&lt;/h2&gt;
+    &lt;p&gt;Da eseguire nel terminale di VS Code ogni volta che fai una modifica:&lt;/p&gt;
+    &lt;div class=&quot;code-block&quot;&gt;
+</code></pre>
+<h1 id="1-pulizia-cartella-di-distribuzione">
+  1. Pulizia cartella di distribuzione
+  <a class="heading-link" href="#1-pulizia-cartella-di-distribuzione">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<p>if (Test-Path docs) { Remove-Item -Recurse -Force docs }</p>
+<h1 id="2-compilazione-del-sito">
+  2. Compilazione del sito
+  <a class="heading-link" href="#2-compilazione-del-sito">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<p>hugo</p>
+<h1 id="3-invio-a-github">
+  3. Invio a GitHub
+  <a class="heading-link" href="#3-invio-a-github">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<p>git add .
+git commit -m &ldquo;Aggiornamento Cyber-Lab&rdquo;
 git push origin main</div>
-</div>
+</div></p>
+<pre><code>&lt;div class=&quot;step-content&quot;&gt;
+    &lt;h2&gt;5. MESSA ONLINE SU GITHUB PAGES&lt;/h2&gt;
+    &lt;p&gt;Configurazione finale nel browser:&lt;/p&gt;
+    &lt;ul&gt;
+        &lt;li&gt;Vai su GitHub -&gt; &lt;span class=&quot;highlight&quot;&gt;Settings&lt;/span&gt; (Impostazioni).&lt;/li&gt;
+        &lt;li&gt;Seleziona &lt;span class=&quot;highlight&quot;&gt;Pages&lt;/span&gt; nel menu a sinistra.&lt;/li&gt;
+        &lt;li&gt;Branch: &lt;span class=&quot;highlight&quot;&gt;main&lt;/span&gt;.&lt;/li&gt;
+        &lt;li&gt;Cartella (Folder): Seleziona &lt;span class=&quot;highlight&quot;&gt;/docs&lt;/span&gt;.&lt;/li&gt;
+        &lt;li&gt;Salva e attendi 60 secondi che il segnale si propaghi.&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
 
-<div style="text-align: center; border-top: 1px solid #0f0; margin-top: 20px; padding-top: 10px;">
-    DOCUMENTO INTEGRALE GENERATO PER GENNARO PECORONE - G&G LAB - 2026
+&lt;div class=&quot;footer-cyber&quot;&gt;
+    DOCUMENTO INTEGRALE GENERATO PER GENNARO PECORONE - G&amp;G LAB - 2026
+&lt;/div&gt;
+</code></pre>
 </div>
-
-</div>
-
   </article>
 </section>
 

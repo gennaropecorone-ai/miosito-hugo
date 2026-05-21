@@ -28,17 +28,26 @@ draft = false
         padding: 5px 15px; 
         text-transform: uppercase; 
         display: inline-block;
-        margin-top: 20px;
+        margin-top: 25px;
     }
     .code-block {
         background-color: #000;
         border: 1px dashed #00FF00;
         padding: 15px;
         margin: 15px 0;
-        font-size: 0.9em;
+        font-size: 0.95em;
         white-space: pre-wrap;
+        color: #00FF00;
     }
     .highlight { color: #fff; font-weight: bold; }
+    .footer-cyber {
+        text-align: center;
+        border-top: 1px solid #00FF00;
+        margin-top: 40px;
+        padding-top: 20px;
+        font-size: 0.9em;
+    }
+    ul { list-style-type: "-> "; }
 </style>
 
 <div class="cyber-body">
@@ -69,7 +78,7 @@ git submodule add https://github.com/luizdepra/hugo-coder.git themes/hugo-coder<
 
     <div class="step-content">
         <h2>3. CONFIGURAZIONE "CYBERSECURITY" (HUGO.TOML)</h2>
-        <p>Sostituisci il contenuto di hugo.toml con questo codice per attivare lo stile Terminale:</p>
+        <p>Sostituisci il contenuto di <span class="highlight">hugo.toml</span> con questo codice per attivare lo stile Terminale:</p>
         <div class="code-block">
 baseURL = 'https://gennaropecorone-ai.github.io/miosito-hugo/'
 languageCode = 'it-it'
@@ -113,14 +122,15 @@ git push origin main</div>
         <h2>5. MESSA ONLINE SU GITHUB PAGES</h2>
         <p>Configurazione finale nel browser:</p>
         <ul>
-            <li>Vai su GitHub -> <span class="highlight">Settings</span> -> <span class="highlight">Pages</span>.</li>
+            <li>Vai su GitHub -> <span class="highlight">Settings</span> (Impostazioni).</li>
+            <li>Seleziona <span class="highlight">Pages</span> nel menu a sinistra.</li>
             <li>Branch: <span class="highlight">main</span>.</li>
             <li>Cartella (Folder): Seleziona <span class="highlight">/docs</span>.</li>
-            <li>Salva e attendi 60 secondi.</li>
+            <li>Salva e attendi 60 secondi che il segnale si propaghi.</li>
         </ul>
     </div>
 
-    <div style="text-align: center; border-top: 1px solid #00FF00; margin-top: 30px; padding-top: 15px; font-size: 0.8em;">
+    <div class="footer-cyber">
         DOCUMENTO INTEGRALE GENERATO PER GENNARO PECORONE - G&G LAB - 2026
     </div>
 </div>
