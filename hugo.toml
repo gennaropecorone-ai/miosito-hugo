@@ -35,3 +35,8 @@ publishDir = 'docs'
     name = "[ CHI SIAMO ]"
     weight = 3
     url = "about/"
+
+    [[menu.main]]
+    name = "[ GUIDA ]"
+    weight = 5
+    url = "guida/"

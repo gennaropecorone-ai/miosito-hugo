@@ -6,6 +6,14 @@
     <description>Recent content on G&amp;G CYBER-LAB</description>
     <generator>Hugo</generator>
     <language>it-it</language>
+    <lastBuildDate>Thu, 21 May 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://gennaropecorone-ai.github.io/miosito-hugo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Guida alla Creazione del Blog</title>
+      <link>https://gennaropecorone-ai.github.io/miosito-hugo/guida/</link>
+      <pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://gennaropecorone-ai.github.io/miosito-hugo/guida/</guid>
+      <description>&lt;h1 id=&#34;guida-completa-gg-cyber-lab&#34;&gt;&#xD;&#xA;  Guida Completa: G&amp;amp;G Cyber-Lab&#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#guida-completa-gg-cyber-lab&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h1&gt;&#xD;&#xA;&lt;p&gt;Questa pagina contiene il riepilogo dei passaggi per la gestione del blog.&lt;/p&gt;&#xA;&lt;h2 id=&#34;1-configurazione-iniziale&#34;&gt;&#xD;&#xA;  1. Configurazione Iniziale&#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#1-configurazione-iniziale&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h2&gt;&#xD;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Tema:&lt;/strong&gt; Hugo Coder&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Stile:&lt;/strong&gt; Cybersecurity (Verde Neon su Nero)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Cartella di pubblicazione:&lt;/strong&gt; &lt;code&gt;docs&lt;/code&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;2-comandi-di-aggiornamento-il-rituale&#34;&gt;&#xD;&#xA;  2. Comandi di Aggiornamento (Il Rituale)&#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#2-comandi-di-aggiornamento-il-rituale&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h2&gt;&#xD;&#xA;&lt;p&gt;Ogni volta che fai una modifica, esegui questi comandi nel terminale:&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>
