@@ -1,11 +1,40 @@
 baseURL = 'https://gennaropecorone-ai.github.io/miosito-hugo/'
 languageCode = 'it-it'
-title = 'Il mio Blog'
+title = 'G&G Blog'
 theme = 'hugo-coder'
 publishDir = 'docs'
 
 [params]
-    author = "Garibaldi"
-    description = "GG"
-    info = "Sito creato con Hugo"
-    avatarurl = "images/Hugo.jpg"
+    author = "G&G"
+    description = "Il blog ufficiale di G&G"
+    info = "Esplorando il futuro con Hugo e l'AI"
+    avatarurl = "images/GG.jpg"
+    
+    # GRAFICA AVANZATA
+    # "auto" cambia da bianco a nero in base alle impostazioni del PC dell'utente
+    colorScheme = "auto" 
+    hideFooter = false
+    hideCredits = false
+    hideCopyright = false
+    
+    # SOCIAL (Appariranno sotto la descrizione)
+    [[params.social]]
+        name = "Github"
+        icon = "fa fa-github"
+        weight = 1
+        url = "https://github.com/gennaropecorone-ai/"
+    [[params.social]]
+        name = "LinkedIn"
+        icon = "fa fa-linkedin"
+        weight = 2
+        url = "https://www.linkedin.com/"
+
+# MENU IN ALTO (Per navigare tra le pagine)
+[[menu.main]]
+    name = "Blog"
+    weight = 1
+    url = "posts/"
+[[menu.main]]
+    name = "Chi Siamo"
+    weight = 2
+    url = "about/"
