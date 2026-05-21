@@ -1,7 +1,8 @@
-baseURL = 'http://localhost:1313/'
+baseURL = 'https://gennaropecorone-ai.github.io/miosito-hugo/'
 languageCode = 'it-it'
 title = 'Il mio Blog'
 theme = 'hugo-coder'
+publishDir = 'docs'
 
 [params]
     author = "Garibaldi"
