@@ -1,0 +1,10 @@
+baseURL = 'http://localhost:1313/'
+languageCode = 'it-it'
+title = 'Il mio Blog'
+theme = 'hugo-coder'
+
+[params]
+    author = "Garibaldi"
+    description = "GG"
+    info = "Sito creato con Hugo"
+    avatarurl = "images/Hugo.jpg"
