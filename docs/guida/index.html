@@ -3,7 +3,7 @@
 
 <head>
   <title>
-  Guida Operativa G&amp;G Cyber-Lab · G&amp;G CYBER-LAB
+  Guida Operativa · G&amp;G CYBER-LAB
 </title>
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,20 +16,21 @@
 <meta name="description" content="
 
     
-        G&G CYBER-LAB
-        MANUALE INTEGRALE DI INSTALLAZIONE E CONFIGURAZIONE [cite: 68, 69]">
+
+    G&G CYBER-LAB
+    MANUALE INTEGRALE DI INSTALLAZIONE E CONFIGURAZIONE">
 <meta name="keywords" content="">
 
 
 
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Guida Operativa G&G Cyber-Lab">
-  <meta name="twitter:description" content="G&amp;G CYBER-LAB MANUALE INTEGRALE DI INSTALLAZIONE E CONFIGURAZIONE [cite: 68, 69]">
+  <meta name="twitter:title" content="Guida Operativa">
+  <meta name="twitter:description" content="G&amp;G CYBER-LAB MANUALE INTEGRALE DI INSTALLAZIONE E CONFIGURAZIONE">
 
 <meta property="og:url" content="https://gennaropecorone-ai.github.io/miosito-hugo/guida/">
   <meta property="og:site_name" content="G&G CYBER-LAB">
-  <meta property="og:title" content="Guida Operativa G&G Cyber-Lab">
-  <meta property="og:description" content="G&amp;G CYBER-LAB MANUALE INTEGRALE DI INSTALLAZIONE E CONFIGURAZIONE [cite: 68, 69]">
+  <meta property="og:title" content="Guida Operativa">
+  <meta property="og:description" content="G&amp;G CYBER-LAB MANUALE INTEGRALE DI INSTALLAZIONE E CONFIGURAZIONE">
   <meta property="og:locale" content="it_it">
   <meta property="og:type" content="article">
     <meta property="article:published_time" content="2026-05-21T00:00:00+00:00">
@@ -150,267 +151,57 @@
     <header>
       <h1 class="title">
         <a class="title-link" href="https://gennaropecorone-ai.github.io/miosito-hugo/guida/">
-          Guida Operativa G&amp;G Cyber-Lab
+          Guida Operativa
         </a>
       </h1>
     </header>
 
     <style>
-    .cyber-body {
-        background-color: #000;
-        color: #00FF00;
-        font-family: 'Courier New', Courier, monospace;
-        padding: 25px;
-        border: 2px solid #00FF00;
-        border-radius: 10px;
-        box-shadow: 0 0 20px #00FF00;
-        line-height: 1.6;
-        max-width: 900px;
-        margin: 20px auto;
-    }
-    .cyber-header {
-        text-align: center;
-        border: 3px double #00FF00;
-        padding: 20px;
-        margin-bottom: 30px;
-        background-color: #1a1a1a;
-    }
-    h1 { font-size: 2.2em; text-transform: uppercase; margin: 0; letter-spacing: 3px; }
-    h2 { 
-        background-color: #00FF00; 
-        color: #000000; 
-        padding: 5px 15px; 
-        margin-top: 30px; 
-        text-transform: uppercase; 
-        font-size: 1.4em;
-        display: inline-block;
-    }
-    .code-block {
-        background-color: #000000;
-        border: 1px dashed #00FF00;
-        padding: 15px;
-        margin: 15px 0;
-        white-space: pre-wrap;
-        font-size: 10pt;
-        color: #00FF00;
-    }
-    .step-content { 
-        margin-bottom: 25px; 
-        padding: 10px;
-        border-left: 2px solid #00FF00;
-    }
-    .highlight { color: #ffffff; font-weight: bold; }
-    .footer {
-        text-align: center;
-        margin-top: 40px;
-        font-size: 9pt;
-        border-top: 1px solid #00FF00;
-        padding-top: 15px;
-    }
-</style>
-<div class="cyber-body">
-    <div class="cyber-header">
-        <h1>G&G CYBER-LAB</h1>
-        <p>MANUALE INTEGRALE DI INSTALLAZIONE E CONFIGURAZIONE [cite: 68, 69]</p>
-    </div>
-<pre><code>&lt;div class=&quot;step-content&quot;&gt;
-    &lt;h2&gt;1. PREPARAZIONE AMBIENTE [cite: 70]&lt;/h2&gt;
-    &lt;p&gt;Eseguire nel Terminale (Amministratore) per installare i componenti core[cite: 71]:&lt;/p&gt;
-    &lt;div class=&quot;code-block&quot;&gt;
-</code></pre>
-<h1 id="installazione-git-hugo-extended-e-vs-code-cite-72">
-  Installazione Git, Hugo Extended e VS Code [cite: 72]
-  <a class="heading-link" href="#installazione-git-hugo-extended-e-vs-code-cite-72">
-    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
-    <span class="sr-only">Link to heading</span>
-  </a>
-</h1>
-<p>winget install Git.Git [cite: 73]
-winget install Hugo.Hugo.Extended [cite: 74]
-winget install Microsoft.VisualStudioCode [cite: 75]
-</div>
-</div></p>
-<pre><code>&lt;div class=&quot;step-content&quot;&gt;
-    &lt;h2&gt;2. CREAZIONE SITO E TEMA [cite: 76]&lt;/h2&gt;
-    &lt;p&gt;Inizializzazione del progetto e collegamento del tema professionale[cite: 77]:&lt;/p&gt;
-    &lt;div class=&quot;code-block&quot;&gt;
-</code></pre>
-<p>hugo new site miosito-hugo [cite: 78]
-cd miosito-hugo [cite: 79]
-git init [cite: 80]
-git submodule add <a href="https://github.com/luizdepra/hugo-coder.git"  class="external-link" target="_blank" rel="noopener">https://github.com/luizdepra/hugo-coder.git</a> themes/hugo-coder [cite: 81]
-</div>
-</div></p>
-<pre><code>&lt;div class=&quot;step-content&quot;&gt;
-    &lt;h2&gt;3. CONFIGURAZIONE &quot;CYBERSECURITY&quot; (HUGO.TOML) [cite: 82]&lt;/h2&gt;
-    &lt;p&gt;Sostituisci il contenuto di &lt;span class=&quot;highlight&quot;&gt;hugo.toml&lt;/span&gt; con questo codice per attivare lo stile Terminale[cite: 83]:&lt;/p&gt;
-    &lt;div class=&quot;code-block&quot;&gt;
-</code></pre>
-<p>baseURL = &lsquo;<a href="https://gennaropecorone-ai.github.io/miosito-hugo/%27"  class="external-link" target="_blank" rel="noopener">https://gennaropecorone-ai.github.io/miosito-hugo/'</a> [cite: 84]
-languageCode = &lsquo;it-it&rsquo; [cite: 85]
-title = &lsquo;G&amp;G CYBER-LAB&rsquo; [cite: 86]
-theme = &lsquo;hugo-coder&rsquo; [cite: 87]
-publishDir = &lsquo;docs&rsquo; [cite: 88]</p>
-<p>[cite_start][params] [cite: 89]
-[cite_start]author = &ldquo;G&amp;G&rdquo; [cite: 90]
-[cite_start]description = &ldquo;SISTEMA OPERATIVO G&amp;G - ACCESSO AUTORIZZATO&rdquo; [cite: 91, 92]
-[cite_start]info = &ldquo;Analisi Dati | Cybersecurity | AI Research&rdquo; [cite: 93]
-[cite_start]avatarurl = &ldquo;images/GG.jpg&rdquo; [cite: 94]
-[cite_start]colorScheme = &ldquo;dark&rdquo; [cite: 95]
-[cite_start]avatarSize = &ldquo;350px&rdquo; [cite: 96]
-[cite_start]layout = &ldquo;circle&rdquo; [cite: 97]
-[cite_start]stickyHeader = true [cite: 98]</p>
-<p>[cite_start][params.colors] [cite: 99]
-[cite_start]primary = &ldquo;#00FF00&rdquo; [cite: 100]
-[cite_start]background = &ldquo;#000000&rdquo; [cite: 100]
-[cite_start]text = &ldquo;#00FF00&rdquo; [cite: 100]
-</div>
-</div></p>
-<pre><code>&lt;div class=&quot;step-content&quot;&gt;
-    &lt;h2&gt;4. [cite_start]PROCEDURA DI PUBBLICAZIONE (IL RITUALE) [cite: 101]&lt;/h2&gt;
-    &lt;p&gt;Da eseguire nel terminale di VS Code ogni volta che fai una modifica[cite: 102]:&lt;/p&gt;
-    &lt;div class=&quot;code-block&quot;&gt;
-</code></pre>
-<h1 id="1-pulizia-cartella-di-distribuzione-cite-103">
-  1. Pulizia cartella di distribuzione [cite: 103]
-  <a class="heading-link" href="#1-pulizia-cartella-di-distribuzione-cite-103">
-    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
-    <span class="sr-only">Link to heading</span>
-  </a>
-</h1>
-<p>if (Test-Path docs) { Remove-Item -Recurse -Force docs } [cite: 104]</p>
-<h1 id="cite_start2-compilazione-del-sito-cite-105">
-  [cite_start]2. Compilazione del sito [cite: 105]
-  <a class="heading-link" href="#cite_start2-compilazione-del-sito-cite-105">
-    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
-    <span class="sr-only">Link to heading</span>
-  </a>
-</h1>
-<p>[cite_start]hugo [cite: 106]</p>
-<h1 id="cite_start3-invio-a-github-cite-107">
-  [cite_start]3. Invio a GitHub [cite: 107]
-  <a class="heading-link" href="#cite_start3-invio-a-github-cite-107">
-    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
-    <span class="sr-only">Link to heading</span>
-  </a>
-</h1>
-<p>[cite_start]git add . [cite: 108]
-[cite_start]git commit -m &ldquo;Aggiornamento Cyber-Lab&rdquo; [cite: 109]
-[cite_start]git push origin main [cite: 110]
-</div>
-</div></p>
-<pre><code>&lt;div class=&quot;step-content&quot;&gt;
-    &lt;h2&gt;5. MESSA ONLINE SU GITHUB PAGES [cite: 111]&lt;/h2&gt;
-    &lt;p&gt;Configurazione finale nel browser[cite: 112]:&lt;/p&gt;
-    &lt;ul&gt;
-        &lt;li&gt;Vai su GitHub -&gt; &lt;span class=&quot;highlight&quot;&gt;Settings&lt;/span&gt; -&gt; &lt;span class=&quot;highlight&quot;&gt;Pages&lt;/span&gt;[cite: 113].&lt;/li&gt;
-        &lt;li&gt;Branch: &lt;span class=&quot;highlight&quot;&gt;main&lt;/span&gt;[cite: 113].&lt;/li&gt;
-        &lt;li&gt;Cartella (Folder): Seleziona &lt;span class=&quot;highlight&quot;&gt;/docs&lt;/span&gt;[cite: 114].&lt;/li&gt;
-        &lt;li&gt;Salva e attendi 60 secondi[cite: 115].&lt;/li&gt;
-    &lt;/ul&gt;
-&lt;/div&gt;+++
-</code></pre>
-<p>title = &lsquo;Guida Operativa&rsquo;
-date = 2026-05-21
-draft = false
-+++</p>
-<style>
-    .cyber-body {
-        background-color: #000;
-        color: #00FF00;
-        font-family: 'Courier New', Courier, monospace;
-        padding: 25px;
-        border: 2px solid #00FF00;
-        border-radius: 10px;
-        box-shadow: 0 0 20px #00FF00;
-        line-height: 1.6;
-    }
-    .cyber-header {
-        text-align: center;
-        border: 3px double #00FF00;
-        padding: 20px;
-        margin-bottom: 30px;
-        background-color: #1a1a1a;
-    }
-    .step-content h2 { 
-        background-color: #00FF00; 
-        color: #000; 
-        padding: 5px 15px; 
-        text-transform: uppercase; 
-        display: inline-block;
-    }
-    .code-block {
-        background-color: #000;
-        border: 1px dashed #00FF00;
-        padding: 15px;
-        margin: 15px 0;
-        font-size: 0.9em;
-    }
+    .cyber-body { background-color: #000; color: #00FF00; font-family: 'Courier New', monospace; padding: 25px; border: 2px solid #00FF00; border-radius: 10px; box-shadow: 0 0 20px #00FF00; }
+    .cyber-header { text-align: center; border: 3px double #00FF00; padding: 20px; margin-bottom: 30px; background-color: #1a1a1a; }
+    .step-content h2 { background-color: #00FF00; color: #000; padding: 5px 15px; text-transform: uppercase; display: inline-block; margin-top: 20px; }
+    .code-block { background-color: #000; border: 1px dashed #00FF00; padding: 15px; margin: 15px 0; font-size: 0.9em; white-space: pre-wrap; }
     .highlight { color: #fff; font-weight: bold; }
 </style>
 <div class="cyber-body">
-    <div class="cyber-header">
-        <h1>G&G CYBER-LAB</h1>
-        <p>MANUALE INTEGRALE DI INSTALLAZIONE E CONFIGURAZIONE</p>
-    </div>
-<pre><code>&lt;div class=&quot;step-content&quot;&gt;
-    &lt;h2&gt;1. PREPARAZIONE AMBIENTE&lt;/h2&gt;
-    &lt;p&gt;Eseguire nel Terminale (Amministratore) per installare i componenti core:&lt;/p&gt;
-    &lt;div class=&quot;code-block&quot;&gt;
-        winget install Git.Git&lt;br&gt;
-        winget install Hugo.Hugo.Extended&lt;br&gt;
-        winget install Microsoft.VisualStudioCode
-    &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;step-content&quot;&gt;
-    &lt;h2&gt;2. CREAZIONE SITO E TEMA&lt;/h2&gt;
-    &lt;p&gt;Inizializzazione del progetto e collegamento del tema professionale:&lt;/p&gt;
-    &lt;div class=&quot;code-block&quot;&gt;
-        hugo new site miosito-hugo&lt;br&gt;
-        cd miosito-hugo&lt;br&gt;
-        git init&lt;br&gt;
-        git submodule add https://github.com/luizdepra/hugo-coder.git themes/hugo-coder
-    &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;step-content&quot;&gt;
-    &lt;h2&gt;3. CONFIGURAZIONE &quot;CYBERSECURITY&quot; (HUGO.TOML)&lt;/h2&gt;
-    &lt;p&gt;Sostituisci il contenuto di &lt;span class=&quot;highlight&quot;&gt;hugo.toml&lt;/span&gt; per attivare lo stile Terminale.&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;step-content&quot;&gt;
-    &lt;h2&gt;4. PROCEDURA DI PUBBLICAZIONE (IL RITUALE)&lt;/h2&gt;
-    &lt;p&gt;Da eseguire nel terminale di VS Code ogni volta che fai una modifica:&lt;/p&gt;
-    &lt;div class=&quot;code-block&quot;&gt;
-        # 1. Pulizia cartella docs&lt;br&gt;
-        if (Test-Path docs) { Remove-Item -Recurse -Force docs }&lt;br&gt;&lt;br&gt;
-        # 2. Compilazione e Invio&lt;br&gt;
-        hugo&lt;br&gt;
-        git add .&lt;br&gt;
-        git commit -m &quot;Aggiornamento Cyber-Lab&quot;&lt;br&gt;
-        git push origin main
-    &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;step-content&quot;&gt;
-    &lt;h2&gt;5. MESSA ONLINE SU GITHUB PAGES&lt;/h2&gt;
-    &lt;ul&gt;
-        &lt;li&gt;Vai su GitHub -&gt; &lt;span class=&quot;highlight&quot;&gt;Settings&lt;/span&gt; -&gt; &lt;span class=&quot;highlight&quot;&gt;Pages&lt;/span&gt;&lt;/li&gt;
-        &lt;li&gt;Branch: &lt;span class=&quot;highlight&quot;&gt;main&lt;/span&gt; | Cartella: &lt;span class=&quot;highlight&quot;&gt;/docs&lt;/span&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-&lt;/div&gt;
-
-&lt;div style=&quot;text-align: center; border-top: 1px solid #0f0; margin-top: 20px; padding-top: 10px;&quot;&gt;
-    DOCUMENTO INTEGRALE GENERATO PER GENNARO PECORONE - G&amp;G LAB - 2026
-&lt;/div&gt;
-</code></pre>
+    
+<div class="cyber-header">
+    <h1>G&G CYBER-LAB</h1>
+    <p>MANUALE INTEGRALE DI INSTALLAZIONE E CONFIGURAZIONE</p>
 </div>
-<pre><code>&lt;div class=&quot;footer&quot;&gt;
-    DOCUMENTO INTEGRALE GENERATO PER GENNARO PECORONE - G&amp;G LAB - 2026 [cite: 116, 117]
-&lt;/div&gt;
-</code></pre>
+
+<div class="step-content">
+    <h2>1. PREPARAZIONE AMBIENTE</h2>
+    <p>Eseguire nel Terminale (Amministratore):</p>
+    <div class="code-block">
+winget install Git.Git
+winget install Hugo.Hugo.Extended
+winget install Microsoft.VisualStudioCode</div>
 </div>
+
+<div class="step-content">
+    <h2>2. CREAZIONE SITO</h2>
+    <div class="code-block">
+hugo new site miosito-hugo
+cd miosito-hugo
+git init</div>
+</div>
+
+<div class="step-content">
+    <h2>3. IL RITUALE DI PUBBLICAZIONE</h2>
+    <div class="code-block">
+hugo
+git add .
+git commit -m "Update"
+git push origin main</div>
+</div>
+
+<div style="text-align: center; border-top: 1px solid #0f0; margin-top: 20px; padding-top: 10px;">
+    DOCUMENTO INTEGRALE GENERATO PER GENNARO PECORONE - G&G LAB - 2026
+</div>
+
+</div>
+
   </article>
 </section>
 
