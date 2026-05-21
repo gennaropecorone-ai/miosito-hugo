@@ -1,40 +1,57 @@
 baseURL = 'https://gennaropecorone-ai.github.io/miosito-hugo/'
 languageCode = 'it-it'
-title = 'G&G Blog'
+title = 'G&G Official Blog'
 theme = 'hugo-coder'
 publishDir = 'docs'
 
 [params]
     author = "G&G"
-    description = "Il blog ufficiale di G&G"
-    info = "Esplorando il futuro con Hugo e l'AI"
+    description = "Il Blog Ufficiale di G&G"
+    info = "Innovazione, AI e Futuro"
     avatarurl = "images/GG.jpg"
     
-    # GRAFICA AVANZATA
-    # "auto" cambia da bianco a nero in base alle impostazioni del PC dell'utente
-    colorScheme = "auto" 
-    hideFooter = false
-    hideCredits = false
-    hideCopyright = false
+    # --- RESTYLING GRAFICO ---
+    colorScheme = "auto"
+    # Rendiamo l'avatar circolare e ben visibile
+    avatarSize = "250px" # Ho ingrandito il cerchio per dare importanza alla foto
+    layout = "circle" 
     
-    # SOCIAL (Appariranno sotto la descrizione)
+    # Navbar e Footer
+    stickyHeader = true # La barra dei menu resta in alto mentre scorri
+    footerLinks = true
+    hideCredits = false
+    
+    # --- SOCIAL ICONS ---
     [[params.social]]
         name = "Github"
-        icon = "fa fa-github"
+        icon = "fa fa-2x fa-github" # 'fa-2x' le rende più grandi e professionali
         weight = 1
         url = "https://github.com/gennaropecorone-ai/"
     [[params.social]]
         name = "LinkedIn"
-        icon = "fa fa-linkedin"
+        icon = "fa fa-2x fa-linkedin"
         weight = 2
         url = "https://www.linkedin.com/"
+    [[params.social]]
+        name = "Email"
+        icon = "fa fa-2x fa-envelope"
+        weight = 3
+        url = "mailto:tuaemail@esempio.com"
 
-# MENU IN ALTO (Per navigare tra le pagine)
+# --- NAVBAR (MENU DI NAVIGAZIONE) ---
 [[menu.main]]
-    name = "Blog"
+    name = "Home"
     weight = 1
+    url = "/"
+[[menu.main]]
+    name = "Articoli"
+    weight = 2
     url = "posts/"
 [[menu.main]]
+    name = "Progetti"
+    weight = 3
+    url = "projects/"
+[[menu.main]]
     name = "Chi Siamo"
-    weight = 2
+    weight = 4
     url = "about/"
