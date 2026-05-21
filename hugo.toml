@@ -1,57 +1,56 @@
 baseURL = 'https://gennaropecorone-ai.github.io/miosito-hugo/'
 languageCode = 'it-it'
-title = 'G&G Official Blog'
+title = 'G&G CYBER-LAB'
 theme = 'hugo-coder'
 publishDir = 'docs'
 
 [params]
     author = "G&G"
-    description = "Il Blog Ufficiale di G&G"
-    info = "Innovazione, AI e Futuro"
+    description = "Sito ufficiale G&G - Protezione & Innovazione"
+    info = "Sistemi in sicurezza. Benvenuti nel terminale."
     avatarurl = "images/GG.jpg"
     
-    # --- RESTYLING GRAFICO ---
-    colorScheme = "auto"
-    # Rendiamo l'avatar circolare e ben visibile
-    avatarSize = "250px" # Ho ingrandito il cerchio per dare importanza alla foto
+    # --- STYLE CYBERSECURITY ---
+    colorScheme = "dark" # Forza il tema scuro
+    avatarSize = "350px" # Immagine di DIO/GG ancora più grande
     layout = "circle" 
     
-    # Navbar e Footer
-    stickyHeader = true # La barra dei menu resta in alto mentre scorri
-    footerLinks = true
-    hideCredits = false
-    
-    # --- SOCIAL ICONS ---
+    # Colori personalizzati (Verde Matrix)
+    # Questi codici rendono il sito stile terminale
+    [params.colors]
+        primary = "#00FF00" # Verde Neon
+        background = "#000000" # Nero profondo
+        text = "#00FF00" # Testo Verde
+
+    # Navbar Sticky (Resta fissa in alto)
+    stickyHeader = true
+
+    # SOCIAL ICONS XL
     [[params.social]]
         name = "Github"
-        icon = "fa fa-2x fa-github" # 'fa-2x' le rende più grandi e professionali
+        icon = "fa fa-2x fa-terminal" # Icona terminale per stile hacker
         weight = 1
         url = "https://github.com/gennaropecorone-ai/"
     [[params.social]]
-        name = "LinkedIn"
-        icon = "fa fa-2x fa-linkedin"
+        name = "Security"
+        icon = "fa fa-2x fa-shield" # Icona scudo per cybersecurity
         weight = 2
-        url = "https://www.linkedin.com/"
-    [[params.social]]
-        name = "Email"
-        icon = "fa fa-2x fa-envelope"
-        weight = 3
-        url = "mailto:tuaemail@esempio.com"
+        url = "#"
 
-# --- NAVBAR (MENU DI NAVIGAZIONE) ---
+# --- NAVBAR PROFESSIONALE ---
 [[menu.main]]
-    name = "Home"
+    name = "> HOME"
     weight = 1
     url = "/"
 [[menu.main]]
-    name = "Articoli"
+    name = "> DATABASE"
     weight = 2
     url = "posts/"
 [[menu.main]]
-    name = "Progetti"
+    name = "> PROGETTI_TOP_SECRET"
     weight = 3
     url = "projects/"
 [[menu.main]]
-    name = "Chi Siamo"
+    name = "> CONTATTI"
     weight = 4
     url = "about/"
